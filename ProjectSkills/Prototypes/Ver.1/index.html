@@ -1,0 +1,174 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Zingy</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="http://demos.jquerymobile.com/1.4.5/css/themes/default/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script
+  src="https://code.jquery.com/jquery-1.12.4.js"
+  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+  crossorigin="anonymous"></script>
+  <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.js"></script>
+</head>
+
+
+
+
+<script>
+function submitReview(){
+        alert("Review submitted");         
+}
+</script>
+
+
+
+
+<body>
+	
+<div id="login" data-role="page">
+  
+  <div data-role="header">Welcome to Zingy - Your personal kitchen assistant.</div>
+  
+  
+	<div role="main" class="ui-content">    
+    	<a href="#mainsearch"  data-transition="slide" class="ui-btn">Login with Facebook</a> 
+    </div>
+    
+  <div data-role="footer">Copyright 2016</div>
+    
+</div>
+
+
+
+<div id="mainsearch" data-role="page">
+	<div data-role="header">Tell us what you have!</div>
+
+	<label for="text-basic">Ingredient 1</label>
+	<input type="text" name="text-basic" id="text-basic" value="">
+	<a href="#" data-role="button" data-icon="plus" data-iconpos="notext" data-theme="c" data-inline="true">Plus</a>
+	<a href="#results" data-role="button" data-icon="arrow-r" data-iconpos="right" data-transition="slide" data-inline="false">Search!</a>
+	
+<div data-role="footer">Copyright 2016</div>
+   
+
+</div>
+
+<div id="results" data-role="page">
+	<div data-role="header">Look all those delicious recipes!</div>
+	<ul data-role="listview" data-inset="true">
+    	<li><a href="#meal">
+        	<img src="images/steakfriespeas.png">
+        	<h2>Douglas's speciality</h2>
+        	<p>Delicious rid-eye steak with fries and peas</p></a>
+    	</li>
+    	<li><a href="#meal">
+       	 	<img src="images/pastameatballs.jpeg">
+       		<h2>Pasta and Meatballs</h2>
+        	<p>A great meal... blabla</p></a>
+    	</li>
+    	<li><a href="#meal">
+        	<img src="images/grilledchickenhearts.jpg">
+        	<h2>Grilled chicken hearts</h2>
+        	<p>Hummmmmmm....</p></a>
+    	</li>
+	</ul>
+	<p><a href="#submit" data-ajax="false">Submit my own recipe!!</a></p>
+
+</div>
+
+
+<div id="meal" data-role="page">
+	<div data-role="header">Check out how it is done! Hmmm...</div>
+	<center>
+	<img src="images/steakfriespeas.png" alt="Douglas's speciality" width="200" height="200">
+	</center>
+	
+	<p>
+	Delicious rib-eye steak with fries and peas.
+	<p>
+	<b>Ingredients:</b> <br>
+		- Rib-eye steak 150-200g <br>
+		- 1 Potato <br>
+		- Frozen peas <br>
+	<p>	
+	<b>Optional:</b> <br>
+		- Red peppers <br>
+		- Salt <br>
+		- Beef stock cubes <br>
+	<p>
+	<b>Preparation:</b> <br>
+		- Peal and slice the potato <br>
+		- Fry for 5min. aprox. <br>
+		- Fry rib-eye steak for 4min. aprox. each side <br>
+		- Boil peas for aprox. 2-3min <br>
+	<p>	
+		<b>Sauce:</b> <br>
+			- Chop red pepper <br> 
+			- Mix with 50ml of boiling water <br>
+			- Add beef stock cube <br>
+	
+	
+	<p><p>
+	<b>Reviews</b>
+	<p>
+	Submitted by Krystal - 11 December 2016 12:45
+	<br>
+	OMG... so delicious!
+	<p><p>
+	<label for="text-basic">Review this recipe!</label>
+	<textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+	<a href="javascript:submitReview()"  data-transition="slide" class="ui-btn">Submit review</a> 
+
+</div>
+
+
+<div id="submit" data-role="page">
+	<div data-role="header">Create and submit yours!</div>
+	
+	<form>
+    	<fieldset data-role="controlgroup">
+       		 <legend>Veggies:</legend>
+       		 <input type="checkbox" name="checkbox-v-1a" id="checkbox-v-1a">
+       		 <label for="checkbox-v-1a">Garden peas</label>
+       		 <input type="checkbox" name="checkbox-v-1b" id="checkbox-v-1b">
+       		 <label for="checkbox-v-1b">Carrots</label>
+   		 </fieldset>
+   		 <p>
+   		 <fieldset data-role="controlgroup">
+       		 <legend>Grains:</legend>
+       		 <input type="checkbox" name="checkbox-v-2a" id="checkbox-v-2a">
+       		 <label for="checkbox-v-2a">Wheat</label>
+       		 <input type="checkbox" name="checkbox-v-2b" id="checkbox-v-2b">
+       		 <label for="checkbox-v-2b">Couscous</label>
+   		 </fieldset>
+   		 <fieldset data-role="controlgroup">
+       		 <legend>Diary:</legend>
+       		 <input type="checkbox" name="checkbox-v-3a" id="checkbox-v-3a">
+       		 <label for="checkbox-v-3a">Milk</label>
+       		 <input type="checkbox" name="checkbox-v-3b" id="checkbox-v-3b">
+       		 <label for="checkbox-v-3b">Cheese</label>
+       		 <input type="checkbox" name="checkbox-v-3c" id="checkbox-v-3c">
+       		 <label for="checkbox-v-3c">Butter</label>
+   		 </fieldset> 		 
+	</form>
+	<p>
+	Small description of your meal:<br>
+	<textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+	<p>
+	Preparation:<br>
+	<textarea cols="40" rows="30" name="textarea2" id="textarea2"></textarea>	
+	<p>
+	<a href="#mainsearch"  data-transition="slide" class="ui-btn">Submit!</a> 
+
+
+</div>
+
+
+</body>
+</html>
+	
+    
+  
+<div data-role="footer">...</div>

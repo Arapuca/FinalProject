@@ -1,0 +1,126 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Zingy</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+ 	    <link rel="stylesheet" href="themes/Kitchen.min.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+
+		<link rel="stylesheet" href="http://demos.jquerymobile.com/1.4.5/css/themes/default/jquery.mobile-1.4.5.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.js"></script>
+  <script>
+
+  </script>
+</head>
+
+
+
+
+<script>
+function submitReview(){
+        alert("Review submitted");         
+}
+function login(){
+	$.mobile.changePage( "#mainsearch", { transition: "slideup", changeHash: false });
+}
+
+</script>
+
+
+<body>
+	
+<div id="login" data-role="page">
+  
+    
+	<div role="main" class="ui-content">
+		<img src="images/logo.png">
+		<input type="text" placeholder="Your username" name="username" id="username" value="">
+		<input type="password" placeholder="Your password" name="password" id="password" value="">
+		<a onclick="login()" data-transition="slide" class="ui-btn">Login</a> 	
+		<p><a href="#register" data-ajax="false">Create an account</a></p>
+    </div>
+
+    
+</div>
+
+
+<div id="register" data-role="page">
+	<div data-role="header">
+		<a href="#" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+  		<h1>Welcome To Zingy</h1>
+  		<a href="#" class="ui-btn ui-icon-search ui-btn-icon-left">Search</a>
+	</div>
+  
+	<div role="main" class="ui-content">
+		Name: <br>
+		<input type="text" name="fullname" id="fullname" value=""> <br>
+		Choose an username: <br>
+		<input type="text" name="username" id="username" value=""> <br>
+		Password: (min. 6 characters) <br>
+		<input type="text" name="password" id="password" value=""> <br>
+		Your email address: <br>
+		<input type="text" name="email" id="email" value=""> <br>
+		
+		<a onclick="" data-transition="slide" class="ui-btn">Register!</a> 	
+    </div>
+    
+</div>
+
+
+
+<div id="mainsearch" data-role="page">
+
+	<label for="text-basic">Ingredient 1</label>
+	<input type="text" name="text-basic" id="text-basic" value="">
+	<a href="#" data-role="button" data-icon="plus" data-iconpos="notext" data-theme="c" data-inline="true">Plus</a>
+	<a href="#results" data-role="button" data-icon="arrow-r" data-iconpos="right" data-transition="slide" data-inline="false">Search!</a>
+	  
+</div>
+
+<div id="results" data-role="page">
+	Results here:
+
+	<p><a href="#submit" data-ajax="false">Submit my own recipe!!</a></p>
+
+</div>
+
+
+<div id="meal" data-role="page">
+	<div data-role="header">Check out how it is done! Hmmm...</div>
+	<p><p>
+	<b>Reviews</b>
+	<p>
+	Submitted by Krystal - 11 December 2016 12:45
+	<br>
+	OMG... so delicious!
+	<p><p>
+	<label for="text-basic">Review this recipe!</label>
+	<textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+	<a href="javascript:submitReview()"  data-transition="slide" class="ui-btn">Submit review</a> 
+
+</div>
+
+
+<div id="submit" data-role="page">
+	<div data-role="header">Create and submit yours!</div>
+	
+	<p>
+	Small description of your meal:<br>
+	<textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+	<p>
+	Preparation:<br>
+	<textarea cols="40" rows="30" name="textarea2" id="textarea2"></textarea>	
+	<p>
+	<a href="#mainsearch"  data-transition="slide" class="ui-btn">Submit!</a> 
+</div>
+
+
+</body>
+</html>
+	
+    
+  
+<div data-role="footer">...</div>

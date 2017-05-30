@@ -1,0 +1,27 @@
+Concept
+Web/mobile application that allows users to look for a list of possible recipes based on the ingredients they have on their fridge. I.e instead of the user search the internet for "how to make a <meal>", the user will provide a list of all ingredients he has (cheese, pasta, miced meat, tomatoes, lemon, carrots) and application will return a possible meal that can be done with them. 
+In this case system would return a pasta-bolognese, if leaving lemon and carrots out. A toggle option can be added to match all ingredients or "the best match".
+
+
+App access (optional login)
+- Everyone
+	- Can make searches only
+- Registered users
+	- Can make searches
+	- Can register new recipes 
+- Admins (mods) 
+    - Creators (us)
+    - Registered users with 30+ approved recipies
+	
+Features
+- 
+- *Stars* 1-5 plus written feedback for each recipe
+- Report button, report bad/fake recipe
+- Submited recipes go to admins (Krystal / Doug) for review and approval
+    - Users with 30+ submissions become admins and can approve new ones 
+- Available also for mobile
+    (to discuss)
+    - Standalone application
+    or
+    - Webapp with responsive design
+    =)

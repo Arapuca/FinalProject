@@ -1,0 +1,31 @@
+Screens
+	- Splash Screen
+		- Logo/Intro animation
+	- Login Screen
+		- Username
+		- Password
+		- Login as guest
+		- Forgot password
+	- Main screen
+		- Search for a meal (button)
+		- Submit a new recipe (button) - Only if logged in
+	- Seach screen		- Threeview of ingredients
+		- Go-Healthy checkbox (confirm idea)
+		- Search!
+		- Return button
+	- Result screen
+		- List of possible meals - stars per recipe
+	- Meal 
+		- Instructions
+		- Reviews/Comments
+
+	- Submit recipe
+		- Add ingredients
+		- Name meal
+		- Healthy seal (confirm idea)
+		- Send to approval (button)
+		- Return button
+
+
+Splash Screen > Login > Main 	> Search > Results > (on click) Meal
+			or	> Submit > Back to Main
